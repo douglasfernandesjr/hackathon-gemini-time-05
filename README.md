@@ -1,4 +1,6 @@
-# Desafio Iteris Food
+# Hackathon Decola Iteris Gemini 
+
+## Desafio Iteris Food
 
 Esse projeto é um desafio onde você deve seguir com a implementação do projeto.
 
@@ -8,6 +10,15 @@ Como insumo você tem:
 
 - Descrição do projeto;
 - Board de Tarefas;
+
+## Equipe 15
+- :rocket: Ana Laura Saccardo Franco https://github.com/Ann3Lune 
+- :rocket: Eliza Lima  https://github.com/elizalap 
+- :rocket: Henrique Windlin  https://github.com/riquew 
+- :rocket: Leidirene Rodrigues da Silva Marques  https://github.com/Leidirene 
+- :rocket: Marcus Vinicius dos Santos Canto https://github.com/MarcusCanto 
+- :rocket: Rodrigo Albani https://github.com/Blazedeck 
+
 
 ## Preparação
 
