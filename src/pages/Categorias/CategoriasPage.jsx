@@ -44,13 +44,16 @@ function CategoriasPage() {
 						>
 							{console.log(categoria)}
 							<img
-								
+
 								src={categoria.image + ".png"}
 								alt={categoria.name}
 								className="imgCategory"
 							/>
-							<Typography className="textNames">{categoria.name}</Typography>
-							<Typography className="textNames">({categoria.total})</Typography>
+							<div className="containerTitulo">
+								<Typography className="textNames">{categoria.name}</Typography>
+								<Typography className="textNames">({categoria.total})</Typography>
+							</div>
+
 						</div>
 					</Grid>
 				))}
