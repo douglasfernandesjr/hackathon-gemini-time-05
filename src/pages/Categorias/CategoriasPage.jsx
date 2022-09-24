@@ -1,3 +1,4 @@
+
 import {
 	CircularProgress,
 	Container,
@@ -17,7 +18,6 @@ function CategoriasPage() {
 
 	const getCategorias = async () => {
 		const result = await getAllCategorias();
-		console.log(result.data);
 		setCategorias(result.data);
 		setLoading(false);
 	};
@@ -37,14 +37,18 @@ function CategoriasPage() {
 			)}
 
 			<Grid container spacing={1} className="gridContainer">
-				{categorias.map((categoria, key) => (
+				{categorias.map((categoria) => (
 					<Grid item xs={4} key={categoria.id}>
 						<div
 							className="containerCategorias"
 							onClick={() => navigate(`/restaurantes/${categoria.id}`)}
 						>
-							{console.log(categoria.imagem)}
-							<img src={categoria.imagem + ".png"} alt={categoria.nome} className="imgCategory"/>
+							<img
+								src={categoria.imagem}
+								alt={categoria.nome}
+								className="imgCategory"
+							/>
+
 							<Typography className="textNames">{categoria.nome}</Typography>
 						</div>
 					</Grid>
