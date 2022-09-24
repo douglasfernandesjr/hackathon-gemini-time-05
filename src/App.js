@@ -29,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<BannersPage />} />
           <Route path="/categorias" exact element={<CategoriasPage />} />
-          <Route path="/restaurantes/:id" exact element={<RestaurantesPage />} />
+          <Route path="/restaurantes/:id" exact element={<RestaurantesPage />}/>
         </Routes>
       </ThemeProvider>
     </BrowserRouter>

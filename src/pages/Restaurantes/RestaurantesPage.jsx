@@ -21,7 +21,7 @@ function RestaurantesPage() {
       setRestaurantesCaro(response.caro);
       setLoading(false);
     })
-  }, []);
+  }, [id]);
 
   return (
     <Container className="restaurantes">

@@ -40,15 +40,16 @@ function CategoriasPage() {
 					<Grid item xs={4} key={categoria.id}>
 						<div
 							className="containerCategorias"
-							onClick={() => navigate(`/restaurantes/${categoria.id}`)}
+							onClick={() => navigate(`/restaurantes/${categoria.id}`, {id:categoria.id})}
 						>
-							{console.log(categoria)}
+
 							<img
 								
 								src={categoria.image + ".png"}
 								alt={categoria.name}
 								className="imgCategory"
 							/>
+							
 							<Typography className="textNames">{categoria.name}</Typography>
 							<Typography className="textNames">({categoria.total})</Typography>
 						</div>
