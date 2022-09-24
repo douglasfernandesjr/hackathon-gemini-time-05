@@ -22,7 +22,7 @@ function BannersPage() {
 
   const getBanners = async () => {
     const result = await getAllBanners();
-    setListaBanners(result.data);
+    setListaBanners(result.data.slice(3));
     console.log(result.data);
     setLoading(false);
   };
