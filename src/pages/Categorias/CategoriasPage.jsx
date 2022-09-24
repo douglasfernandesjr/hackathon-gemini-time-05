@@ -40,7 +40,7 @@ function CategoriasPage() {
 					<Grid item xs={4} key={categoria.id}>
 						<div
 							className="containerCategorias"
-							onClick={() => navigate(`/restaurantes/${categoria.id}`, {id:categoria.id})}
+							onClick={() => navigate(`/restaurantes/${categoria.id}`, { id: categoria.id })}
 						>
 
 							<img
@@ -49,17 +49,11 @@ function CategoriasPage() {
 								alt={categoria.name}
 								className="imgCategory"
 							/>
-<<<<<<< HEAD
-							
-							<Typography className="textNames">{categoria.name}</Typography>
-							<Typography className="textNames">({categoria.total})</Typography>
-=======
 							<div className="containerTitulo">
 								<Typography className="textNames">{categoria.name}</Typography>
 								<Typography className="textNames">({categoria.total})</Typography>
 							</div>
 
->>>>>>> 5770b0f3e02dc886aa8ce8bd65e3a48db978303a
 						</div>
 					</Grid>
 				))}
