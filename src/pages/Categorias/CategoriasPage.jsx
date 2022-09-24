@@ -17,7 +17,6 @@ function CategoriasPage() {
 
 	const getCategorias = async () => {
 		const result = await getAllCategorias();
-		console.log(result.data);
 		setCategorias(result.data);
 		setLoading(false);
 	};
@@ -43,7 +42,6 @@ function CategoriasPage() {
 							className="containerCategorias"
 							onClick={() => navigate(`/restaurantes/${categoria.id}`)}
 						>
-							{console.log(categoria.imagem)}
 							<img src={categoria.imagem + ".png"} alt={categoria.nome} className="imgCategory"/>
 							<Typography className="textNames">{categoria.nome}</Typography>
 						</div>
