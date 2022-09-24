@@ -51,3 +51,20 @@
   justify-content: center;
   margin: 30px 0 10px;
 }
+
+.subtitle {
+  display: inline;
+}
+
+.subtitle p {
+  font-weight: bold;
+}
+
+.descricao {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.descricao p {
+  font-size: 12px;
+}

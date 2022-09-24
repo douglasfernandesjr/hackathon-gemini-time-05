@@ -23,6 +23,7 @@ function BannersPage() {
   const getBanners = async () => {
     const result = await getAllBanners();
     setListaBanners(result.data);
+    console.log(result.data);
     setLoading(false);
   };
 
@@ -44,7 +45,7 @@ function BannersPage() {
 
   return (
     <div className="full-height" style={{backgroundColor: selectedBanner['background-color']}}>
-      <Container>
+      <Container align="center">
         <div className="title-home">
           <Typography
             className="title-home"
@@ -56,13 +57,17 @@ function BannersPage() {
           </Typography>
         </div>
 
-        <Typography variant="body1" align="center" className="subtitle">
-          {selectedBanner.subtitulo}
-        </Typography>
+        <div className="subtitle">
+          <Typography variant="body1" align="center">
+            {selectedBanner.subtitulo}
+          </Typography>
+        </div>
 
-        <Typography variant="body2" align="center" className="descricao">
-          {selectedBanner.descriçao}
-        </Typography>
+        <div className="descricao">
+          <Typography variant="body2" align="center">
+            {selectedBanner.descricao}
+          </Typography>
+        </div>
 
         <div className="actions">
           <Fab color="primary" onClick={() => mudarBanner(-1)} disabled={isFirst}>
