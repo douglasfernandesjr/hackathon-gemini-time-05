@@ -1,4 +1,3 @@
-
 import {
 	CircularProgress,
 	Container,
@@ -43,13 +42,15 @@ function CategoriasPage() {
 							className="containerCategorias"
 							onClick={() => navigate(`/restaurantes/${categoria.id}`)}
 						>
+							{console.log(categoria)}
 							<img
-								src={categoria.imagem}
-								alt={categoria.nome}
+								
+								src={categoria.image + ".png"}
+								alt={categoria.name}
 								className="imgCategory"
 							/>
-
-							<Typography className="textNames">{categoria.nome}</Typography>
+							<Typography className="textNames">{categoria.name}</Typography>
+							<Typography className="textNames">{categoria.total}</Typography>
 						</div>
 					</Grid>
 				))}
