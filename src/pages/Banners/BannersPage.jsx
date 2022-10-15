@@ -22,7 +22,7 @@ function BannersPage() {
 
   const getBanners = async () => {
     const result = await getAllBanners();
-    setListaBanners(result.data);
+    setListaBanners(result.data.slice(3));
     setLoading(false);
   };
 
@@ -56,12 +56,14 @@ function BannersPage() {
           </Typography>
         </div>
 
+
         <Typography variant="body1" align="center" className="subtitle">
           {selectedBanner.subtitulo}
         </Typography>
 
+
         <Typography variant="body2" align="center" className="descricao">
-          {selectedBanner.descriçao}
+          {selectedBanner.descricao}
         </Typography>
 
         <div className="actions">

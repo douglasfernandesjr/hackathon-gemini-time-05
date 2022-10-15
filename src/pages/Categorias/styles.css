@@ -11,7 +11,6 @@
 	max-width: 350px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	margin-bottom: 4px;
 }
 
 .categorias .containerCategorias {
@@ -20,4 +19,13 @@
 	flex-direction: column;
 	margin: 10px 0 5px;
 	cursor: pointer;
+	color: #585656;
+	background-color: #DEDDDD;
+	border-radius: 15px;
+	max-width: 91px;
+}
+
+.categorias .textCategory{
+	padding-bottom: 5px;
+	text-align: center;
 }

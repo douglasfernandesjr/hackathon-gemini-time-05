@@ -1,0 +1,42 @@
+.restaurantes .sub-header span {
+  color: #DEDDDD;
+}
+
+.sub-header {
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.subTitle {
+  font-weight: bold;
+}
+
+.restauranteContainer {
+  background-color: #DEDDDD;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  margin: 20px 20px;
+  max-width: 100%;
+}
+
+
+
+.imgCategory img {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 110px;
+  width: 110px;
+}
+
+.textCategory {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px;
+}
+
+.ratingCategory {
+  display: flex;
+  align-items: center;
+}

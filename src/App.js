@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import BannersPage from "./pages/Banners";
 import CategoriasPage from "./pages/Categorias";
 import RestaurantesPage from "./pages/Restaurantes";
+import RestauranteDetalhesPage from "./pages/Restaurante";
 
 const themeCustom = createTheme({
   palette: {
@@ -16,6 +17,9 @@ const themeCustom = createTheme({
   typography: {
     fontFamily: "Ubuntu",
     h5: {
+      fontWeight: 600,
+    },
+    subtitle1: {
       fontWeight: 600,
     }
   },
@@ -30,6 +34,7 @@ function App() {
           <Route path="/" exact element={<BannersPage />} />
           <Route path="/categorias" exact element={<CategoriasPage />} />
           <Route path="/restaurantes/:id" exact element={<RestaurantesPage />} />
+          <Route path="/restaurante/:id" exact element={<RestauranteDetalhesPage />} />
         </Routes>
       </ThemeProvider>
     </BrowserRouter>
