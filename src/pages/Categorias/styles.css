@@ -1,5 +1,7 @@
 .categorias .gridContainer {
 	margin-top: 45px;
+	display: flex;
+	justify-content: flex-start;
 }
 
 .categorias .textNames {
@@ -18,12 +20,11 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin: 10px 0 5px;
+	margin: 10px;
 	cursor: pointer;
 	color: #585656;
-	background-color: #DEDDDD;
+	background-color: #f7f7f7;;
 	border-radius: 15px;
-	max-width: 91px;
 }
 
 .categorias .textCategory{
@@ -35,7 +36,6 @@
 	width: 91px;
 	margin-bottom: 4px;
 	background: #f6f6f6;
-
 	padding: 6px 0;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;

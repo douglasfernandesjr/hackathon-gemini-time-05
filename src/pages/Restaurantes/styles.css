@@ -1,10 +1,14 @@
+.restaurantes {
+  color:#7c7c7c;
+}
+
 .restaurantes .sub-header span {
   color: #DEDDDD;
 }
 
 .sub-header {
   margin-bottom: 30px;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .subTitle {
@@ -12,28 +16,26 @@
 }
 
 .restauranteContainer {
-  background-color: #DEDDDD;
+  background-color: #f7f7f7;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
-  height: 110px;
-  margin: 20px 20px;
+  height: 130px;
+  margin: 20px 0;
   max-width: 100%;
 }
-
-
 
 .imgCategory img {
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
-  height: 110px;
-  width: 110px;
+  height: 130px;
+  width: 120px;
 }
 
 .textCategory {
   display: flex;
   flex-direction: column;
-  padding: 5px 5px;
+  padding: 5px 10px;
 }
 
 .ratingCategory {

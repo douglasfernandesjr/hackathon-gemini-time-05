@@ -1,8 +1,7 @@
 import { Container, Typography, CircularProgress } from "@material-ui/core";
 import StarIcon from '@material-ui/icons/Star';
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { getRestaurantes } from "../../services/restaurantes.service";
 import "./styles.css";
 
@@ -19,13 +18,15 @@ function RestaurantesPage() {
   useEffect(() => {
     getRestaurantes(id.id).then((response) => {
       const data = (response.data)
+      console.log(data)
+      console.log(id)
       setNomeCategoria(data.categoria);
       setRestaurantesBaratinho(data.baratinho);
       setRestaurantesNoPreco(data.no_preco);
       setRestaurantesCaro(data.caro);
       setLoading(false);
     })
-  }, [id.id]);
+  }, [id]);
 
 
   return (
@@ -66,7 +67,10 @@ function RestaurantesPage() {
               {restaurante.nota}
             </Typography>
             <Typography>
-              {restaurante.tempo_medio} - {'Frete: R$ ' + restaurante.valor_entrega}
+              {restaurante.tempo_medio}
+            </Typography>
+            <Typography>
+              {(restaurante.valor_entrega > 0) ? 'R$ ' + restaurante.valor_entrega : 'Frete grátis'}
             </Typography>
           </div>
         </div>
@@ -98,7 +102,10 @@ function RestaurantesPage() {
               {restaurante.nota}
             </Typography>
             <Typography>
-              {restaurante.tempo_medio} - {'Frete: R$ ' + restaurante.valor_entrega}
+              {restaurante.tempo_medio}
+            </Typography>
+            <Typography>
+              {(restaurante.valor_entrega > 0) ? 'R$ ' + restaurante.valor_entrega : 'Frete grátis'}
             </Typography>
           </div>
         </div>
@@ -130,7 +137,10 @@ function RestaurantesPage() {
               {restaurante.nota}
             </Typography>
             <Typography>
-              {restaurante.tempo_medio} - {'Frete: R$ ' + restaurante.valor_entrega}
+              {restaurante.tempo_medio}
+            </Typography>
+            <Typography>
+              {(restaurante.valor_entrega > 0) ? 'R$ ' + restaurante.valor_entrega : 'Frete grátis'}
             </Typography>
           </div>
         </div>
