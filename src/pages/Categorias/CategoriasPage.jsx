@@ -19,6 +19,7 @@ function CategoriasPage() {
 		const result = await getAllCategorias();
 		setCategorias(result.data);
 		setLoading(false);
+		console.log(result.data)
 	};
 
 	useEffect(() => {

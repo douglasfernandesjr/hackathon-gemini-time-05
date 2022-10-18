@@ -44,7 +44,7 @@ function BannersPage() {
 
   return (
     <div className="full-height" style={{backgroundColor: selectedBanner['background-color']}}>
-      <Container>
+      <Container align="center">
         <div className="title-home">
           <Typography
             className="title-home"

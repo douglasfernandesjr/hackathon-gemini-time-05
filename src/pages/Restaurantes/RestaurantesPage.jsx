@@ -29,7 +29,7 @@ function RestaurantesPage() {
 
 
   return (
-    <Container class="restaurantes">
+    <Container className="restaurantes">
       <Typography variant="h5" align="center" color="primary" className="title">
         RESTAURANTES: {nomeCategoria}
       </Typography>
@@ -135,6 +135,8 @@ function RestaurantesPage() {
           </div>
         </div>
       ))}
+
+
     </Container>
   )
 }

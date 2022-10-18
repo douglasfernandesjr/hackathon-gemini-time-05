@@ -5,6 +5,7 @@
 .categorias .textNames {
 	text-align: center;
 	font-size: 14px;
+	color: #828282;
 }
 
 .categorias .imgCategory {
@@ -28,4 +29,15 @@
 .categorias .textCategory{
 	padding-bottom: 5px;
 	text-align: center;
+}
+
+.categorias .containerTitulo {
+	width: 91px;
+	margin-bottom: 4px;
+	background: #f6f6f6;
+
+	padding: 6px 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
 }
