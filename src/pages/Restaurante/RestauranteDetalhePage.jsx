@@ -67,6 +67,8 @@ function RestauranteDetalhePage() {
                     </Typography>
                 </div>
             </div>
+
+
             <div className="descricaoCategory">
                 <Typography>
                     {descricao}
@@ -81,12 +83,35 @@ function RestauranteDetalhePage() {
                     <input type="text" placeholder="Buscar no cardápio" />
                 </form>
             </div>
+
+
             <div className="cardapioCategory">
                 {cardapio.map(item => (
-                    <div key={item.categoria}>
-                        <div>
-                        {item.categoria}
-                        </div>
+                    <div key={item.categoria} className="categoriaContainer">
+                            <Typography variant='subtitle1'>
+                                {item.categoria}
+                            </Typography>
+                            {item.itens.map(comida => (
+                            <div key={comida.nome} className="foodContainer">
+                                <div className="imgCategory">
+                                    <img src={comida.imagem} alt={comida.imagem}></img>
+                                </div>
+                                <div className="textCategory">
+                                    <Typography variant='subtitle1'>
+                                        {comida.nome.slice(0, 21)}
+                                    </Typography>
+                                    <Typography class="descricaoComida">
+                                        {comida.descricao.slice(0, 100)}
+                                    </Typography>
+                                    <div className="priceCategory">
+                                        <Typography variant='subtitle1'>
+                                            R$ {comida.valor}
+                                        </Typography>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                        
                     </div>
                 ))}
             </div>
