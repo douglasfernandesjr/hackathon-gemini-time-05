@@ -23,7 +23,6 @@ function RestauranteDetalhePage() {
     useEffect(() => {
         getDetalhes(id.id).then((response) => {
           const data = (response.data);
-          console.log(data);
           setImgRestaurante(data.imagem);
           setNomeRestaurante(data.nome);
           setDistanciaRestaurante(data.distancia);

@@ -19,7 +19,6 @@ function CategoriasPage() {
 		const result = await getAllCategorias();
 		setCategorias(result.data);
 		setLoading(false);
-		console.log(result.data)
 	};
 
 	useEffect(() => {
@@ -41,7 +40,7 @@ function CategoriasPage() {
 					<Grid item xs={4} key={categoria.ID}>
 						<div
 							className="containerCategorias"
-							onClick={() => navigate(`/restaurantes/${categoria.ID}`)}
+							onClick={() => navigate(`/restaurantes/${(categoria.ID === 6) ? 7 : categoria.ID}`)}
 						>
 							<img src={categoria.image + ".png"} alt={categoria.name} className="imgCategory"/>
 							<div className="textCategory">
